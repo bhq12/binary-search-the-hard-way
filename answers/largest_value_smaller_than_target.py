@@ -1,35 +1,32 @@
 ############################################################
 ############################################################
 '''
-The original, the classic.
-Embrace the first-year computer science nostalgia as you
-implement binary search the right way
+A common modification!
+
+Please return the largest value in the array that is smaller than the target.
 
 Input:
 array - A sorted list of integers
 target_value - the integer to find in the array
 
-Note: if the target_value is not in the array, please return -1
+Note: - If there are no values in the array smaller than the target, please return -1
 
 '''
 ############################################################
 ############################################################
 
-
 def binary_search(array: list[int], target_value: int):
     left_pointer = 0
     right_pointer = len(array) - 1
+    best_candidate = -1
 
-    #NOTE: <= is used when we are converging on the correct value
     while left_pointer <= right_pointer:
         center = (left_pointer + right_pointer) // 2
-        center_val = array[center]
-        if center_val < target_value:
+        center_value = array[center]
+        if center_value < target_value:
+            best_candidate = center
             left_pointer = center + 1
-        elif center_val == target_value:
-            return center
         else:
             right_pointer = center - 1
-    #NOTE: The use of <= means if we reach this point, the target_value
-    # is not in the array
-    return -1
+    return best_candidate
+
