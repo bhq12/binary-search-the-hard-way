@@ -1,3 +1,4 @@
+from helpers.assert_with_message import assert_with_message
 ############################################################
 ############################################################
 '''
@@ -16,17 +17,26 @@ Note: - If there are no values in the array smaller than the target, please retu
 ############################################################
 
 def binary_search(array: list[int], target_value: int):
-    left_pointer = 0
-    right_pointer = len(array) - 1
-    best_candidate = -1
+    return NotImplementedError
 
-    while left_pointer <= right_pointer:
-        center = (left_pointer + right_pointer) // 2
-        center_value = array[center]
-        if center_value < target_value:
-            best_candidate = center
-            left_pointer = center + 1
-        else:
-            right_pointer = center - 1
-    return best_candidate
+if __name__ ==  '__main__':
+    array = [1, 2, 3, 4, 5]
+    assert_with_message(binary_search(array, 3), 2)
 
+    array = [0, 1, 2, 3, 4, 5]
+    assert_with_message(binary_search(array, 3), 2)
+
+    array = [0.00001, 0.0001, 0.001, 0.01, 0.1, 1]
+    assert_with_message(binary_search(array, 1), 0.1)
+
+    array = [-1, 1, 2, 3, 4, 5]
+    assert_with_message(binary_search(array, 3), 2)
+
+    array = range(10**15) 
+    assert_with_message(binary_search(array, 3000000), 2999999)
+    assert_with_message(binary_search(array, 10**12), (10**12 - 1))
+
+    array = []
+    assert_with_message(binary_search(array, 1), -1)
+
+    print("Congratulations! Your binary search implementation was correct 🎉")
