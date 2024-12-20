@@ -14,6 +14,8 @@ the location of the start of the array is now at index 3
 Input:
 array - A (potentially shifted) sorted list of integers
 
+Output:
+index - the index of the start of the shifted array
 Note: if the array has not been shifted, please return 0
 
 Second note: Negative indexes are correct i.e. for the
@@ -22,7 +24,7 @@ index -2
 
 '''
 
-def binary_search(array: list[int]):
+def binary_search(array: list[int]) -> int:
     # implement your binary search here!
     raise NotImplementedError
 
@@ -44,7 +46,7 @@ if __name__ ==  '__main__':
     assert_with_message(binary_search(array), 0)
 
     array = []
-    assert_with_message(binary_search(array, 1), 0)
+    assert_with_message(binary_search(array), 0)
 
     print("Congratulations! Your binary search implementation was correct 🎉")
 

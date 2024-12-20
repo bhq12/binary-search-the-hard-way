@@ -10,6 +10,9 @@ Input:
 array - A sorted list of integers
 target_value - the integer to find in the array
 
+Output:
+index - the index of the integer in the array
+
 Note: if the target_value is not in the array, please return -1
 
 '''
@@ -17,7 +20,7 @@ Note: if the target_value is not in the array, please return -1
 ############################################################
 
 
-def binary_search(array: list[int], target_value: int):
+def binary_search(array: list[int], target_value: int) -> int:
     # implement your binary search here!
     raise NotImplementedError
 

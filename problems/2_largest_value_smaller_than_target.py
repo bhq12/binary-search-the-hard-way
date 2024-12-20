@@ -10,13 +10,16 @@ Input:
 array - A sorted list of integers
 target_value - the integer to find in the array
 
+Output:
+index - the index of the largest value in the array that is smaller than target_value
+
 Note: - If there are no values in the array smaller than the target, please return -1
 
 '''
 ############################################################
 ############################################################
 
-def binary_search(array: list[int], target_value: int):
+def binary_search(array: list[int], target_value: int) -> int:
     return NotImplementedError
 
 if __name__ ==  '__main__':
