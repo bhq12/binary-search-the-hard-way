@@ -33,7 +33,7 @@ You should go here first! This is where the problems are kept, Read the problem 
 def binary_search...
 ```
 
-All problem definitions have prefilled test cases containing common scenarios and edge cases. You're welcome to either look at or ignore the scenarios while thinking about the problem, they're at the bottom of the file in the ```if \_\_name\_\_ == '\_\_main\_\_``` block.
+All problem definitions have prefilled test cases containing common scenarios and edge cases. You're welcome to either look at or ignore the scenarios while thinking about the problem, they're at the bottom of the file in the ```if __name__ == '__main__'``` block.
 
 #### Running the scenarios
 
