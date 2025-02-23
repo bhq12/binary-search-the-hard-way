@@ -17,7 +17,9 @@ I always mess these up, use this tool to help you not mess them up too!
 If you are a newcomer to binary search, don't worry, we have background and easy problems too to help bring you up to speed!
 
 ## Background
-If you're currently unfamiliar with binary search as a concept, or it's been a long time since you've revisited the concept, feel free to read through the concepts in ./background first (and please raise a pull request and contribute back if there is anything missed or additional detail that would be helpful!
+If you're currently unfamiliar with binary search as a concept, or it's been a long time since you've revisited the concept, feel free to read through the concepts in ./background first.
+
+If you readthrough the backgroundamd find there are any missing details please raise a pull request to contribute back for future learners 🙂.
 
 ## Setup and dependencies
 This project is intentionally created with no package dependencies for simple running on any system. All that is required is that you have a recent-ish python 3.x version installed. It is recommended that this version is python 3.10+, but I suspect it will work on older versions as well (I just haven't tested with the typehints etc.)
